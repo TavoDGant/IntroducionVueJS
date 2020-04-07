@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+   
     <title>Vue Js</title>
 </head>
 <body>
@@ -33,6 +33,18 @@
         </ol>
     </div>
 
+    <div id="app-5">
+        <p>{{mensaje}}</p>
+        <button v-on:click="alreves">Al revés</button>
+    </div>
+
+    <div id="app-6">
+        <h5>{{mensaje}}</h5>
+        <input v-model="mensaje">
+    </div>
+
+     <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="/js/index.js"></script>
 </body>
 </html>

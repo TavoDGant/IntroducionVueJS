@@ -29,3 +29,22 @@ var app4 = new Vue({
         ]
     }
 })
+
+var app5 = new Vue({
+    el: '#app-5',
+    data: {
+        mensaje: 'Hola Elena :v'
+    },
+    methods: {
+        alreves (){
+            this.mensaje = this.mensaje.split('').reverse().join('')
+        }
+    }
+})
+
+var app6 = new Vue({
+    el: '#app-6',
+    data: {
+        mensaje: 'Escribe algo'
+    }
+})
