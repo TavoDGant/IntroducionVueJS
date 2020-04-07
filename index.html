@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Vue Js</title>
+</head>
+<body>
+
+    <div id="app">
+        {{mensaje}}
+    </div>
+
+    <div id="app-2">
+        <span v-bind:title="mensaje">
+            Coloca el mouse encima de mi unos segundos.
+        </span>
+    </div>
+
+    <div id="app-3">
+        <span v-if="visto">
+            Puedes ver este mensaje.
+        </span>
+    </div>
+
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.texto}}
+            </li>
+        </ol>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
