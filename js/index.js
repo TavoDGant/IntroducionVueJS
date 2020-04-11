@@ -33,7 +33,7 @@ var app4 = new Vue({
 var app5 = new Vue({
     el: '#app-5',
     data: {
-        mensaje: 'Hola Elena :v'
+        mensaje: 'Hola :v'
     },
     methods: {
         alreves (){
@@ -46,5 +46,22 @@ var app6 = new Vue({
     el: '#app-6',
     data: {
         mensaje: 'Escribe algo'
+    }
+})
+
+//----------------------------------Componentes
+Vue.component('productos', {
+    props: ['producto'],
+    template: '<li>{{producto.text}}</li>'
+})
+
+var app7 = new Vue({
+    el: '#app-7',
+    data: {
+        listaProductos: [
+            {id: 0, text: 'Vegetales'},
+            {id: 1, text: 'Queso'},
+            {id: 2, text: 'Fruta'}
+        ]
     }
 })

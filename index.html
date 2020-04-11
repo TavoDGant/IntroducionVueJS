@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Vue Js</title>
 </head>
-<body>
+<body class="container bg-light">
 
-    <div id="app">
+    <div id="app" class="text-light text-center bg-info">
         {{mensaje}}
     </div>
 
@@ -35,7 +35,7 @@
 
     <div id="app-5">
         <p>{{mensaje}}</p>
-        <button v-on:click="alreves">Al revés</button>
+        <button class="btn-success" v-on:click="alreves">Al revés</button>
     </div>
 
     <div id="app-6">
@@ -43,6 +43,20 @@
         <input v-model="mensaje">
     </div>
 
+    <div class="bg-info">
+        <h5 class="text-center text-light">Componentes</h5>
+    </div>
+
+    <div id="app-7">
+        <ol>
+            <productos
+                v-for="product in listaProductos"
+                v-bind:producto="product"
+                v-bind:key="product.id">
+            </productos>
+        </ol>
+    </div>
+    
      <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="/js/index.js"></script>
